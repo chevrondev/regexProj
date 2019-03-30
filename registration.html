@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <title>REGEX</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active">Registration</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div><!-- /Navbar-->
+    <div class="container-fluid">
+      <div class="wrapper">
+        <div class="forms">
+          <h2>REGEX FORM VALIDATION</h2>
+          <form method="post" name="form" action="submit.html">
+            First name:<br>
+            <input type="text" id="fName" onkeyup="validateFn()"><label id="fnLabel"></label>
+            <br><br>
+            Last name:<br>
+            <input type="text" id="lName" onkeyup="validateLn()"><label id="lnLabel"></label>
+            <br><br>
+            Phone Number:<br>
+            <input type="text" id="tel" onkeyup="validateTel()"><label id="telLabel"></label>
+            <br><br>
+            Mobile:<br>
+            <input type="text" id="mob" onkeyup="validateMob()"><label id="mobLabel"></label>
+            <br><br>
+            Email Address:<br>
+            <input type="text" id="email" onkeyup="validateEmail()"><label id="emlLabel"></label>
+            <br><br>
+            Flat No:<br>
+            <input type="text" id="flatNo" onkeyup="validateFlat()"><label id="flatLabel"></label>
+            <br><br>
+            Address line one:<br>
+            <input type="text" id="line1" onkeyup="validateAddress()"><label id="addressLabel"></label>
+            <br><br>
+            City:<br>
+            <input type="text" id="city" onkeyup="validateCity()"><label id="cityLabel"></label>
+            <br><br>
+            Postcode:<br>
+            <input type="text" id="pc" onkeyup="validatePc()"><label id="pcLabel"></label>
+            <br><br>
+            <input type="submit" value="Submit"><!-- Disable the button untill all fields are valid-->
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="valid.js"></script>
+  </body>
+</html>
